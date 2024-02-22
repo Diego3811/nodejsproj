@@ -2,7 +2,7 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
 }
 body{
   font-family: "Poppins";
@@ -22,11 +22,83 @@ body{
   padding: 0;
 }
 .navbar-item{
-  margin-right: 10px;
+  padding-right: 10px;
 }
 .navbar-link{
   text-decoration: none;
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
+}
+
+
+
+/** cookies **/
+
+.cookies-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 13px;
+  box-shadow: 2px 2px 20px #a7a7a7; 
+  position:relative;
+  width: 300px;
+  height: 200px;
+  padding: 20px 30px;
+  overflow: hidden;
+}
+
+.cookie-icon{
+  font-size: 50px;
+}
+
+.cookies-title{
+  font-size: 1.2em;
+  font-weight: 800;
+  color: #450ba1;
+}
+
+.cookies-description{
+  text-align: center;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+
+.cookies-buttons{
+  display: flex;
+  gap: 20px;
+  flex-direction: row;
+}
+
+.cookies-accept-button{
+  background-color: #4f02ca;
+  border-radius: 20px;
+  border: none;
+  width: 80px;
+  height: 30px;
+  font-weight: 600;
+  color: white;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+}
+
+.cookies-accept-button:hover{
+  background-color: #7b40da;
+  transition: 0.2s;
+}
+
+.cookies-decline-button{
+  background-color: #afaeae;
+  border-radius: 20px;
+  border: none;
+  width: 80px;
+  height: 30px;
+  font-weight: 600;
+  transition: 0.2;
+  cursor: pointer;
+}
+.cookies-decline-button:hover{
+  background-color: #c4c4c4;
+  transition: 0.2s;
 }
